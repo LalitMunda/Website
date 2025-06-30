@@ -1,17 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Minimal Site</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio - About</title>
+
+  <!-- ✅ Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Optional: Google Font (for cleaner look) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
 </head>
 <body>
-  <main>
-    <h1>Hello, World!</h1>
-    <button onclick="greet()">Click Me</button>
-    <p id="message"></p>
-  </main>
-  <script src="script.js"></script>
+
+  <!-- ✅ About Section -->
+  <section id="about" class="py-5 bg-light text-center">
+    <div class="container">
+
+      <!-- Large Headline -->
+      <h2 class="display-4 mb-4">About</h2>
+
+      <!-- Circular Profile Picture -->
+      <div class="mb-4 d-flex justify-content-center">
+        <img src="images/about.jpg" alt="Profile Picture"
+             class="rounded-circle border border-secondary shadow"
+             style="width: 200px; height: 200px; object-fit: cover;">
+      </div>
+
+      <!-- About Text -->
+      <div class="mx-auto" style="max-width: 600px;">
+        <p>Hello! I’m <strong>Lalit Munda</strong>, a passionate and curious learner interested in technology, programming, and personal growth. I enjoy exploring new ideas and building meaningful projects.</p>
+        <p>I believe in continuous learning and strive to improve my skills every day. Feel free to explore my portfolio to learn more about my work and interests.</p>
+      </div>
+
+    </div>
+  </section>
+
 </body>
 </html>
